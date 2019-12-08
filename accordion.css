@@ -1,0 +1,26 @@
+.car-accordion.closed {
+  height: 0 !important;
+  overflow: hidden !important;
+  display: none !important;
+}
+
+.car-accordion.open {
+  height: auto;
+}
+
+.car-accordion {
+  box-shadow: 0 0 0 3px red;
+}
+
+.car-toggler {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100000000000;
+  user-select: none;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}

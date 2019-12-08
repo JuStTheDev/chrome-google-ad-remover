@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Google Ad Remover",
+  "description": "This Plugin will remove Google Search result ads",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.google.de/search*",
+        "*://www.google.com/search*"
+      ],
+      "js": ["hide-ads.js"],
+      "css" : ["accordion.css"]
+    }
+  ]
+}
